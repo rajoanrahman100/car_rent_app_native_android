@@ -43,42 +43,78 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/userNameInput"
-            android:hint="User Name"
+            android:id="@+id/signUpFullName"
+            android:hint="Full Name"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:inputType="text"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/userPasswordInput"
-            android:hint="Password"
-            app:passwordToggleEnabled="true"
-            android:layout_marginTop="10sp"
+            android:id="@+id/signUpUserName"
+            android:hint="User Name"
+            android:layout_marginTop="5dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:inputType="textPassword"
                 android:layout_width="match_parent"
+                android:inputType="text"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:fontFamily="sans-serif-condensed"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpEmail"
+            android:hint="Email"
             android:layout_marginTop="5dp"
-            android:text="Forgot Password"
-            android:textStyle="bold"
-            android:layout_gravity="right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpPhone"
+            android:hint="Phone Number"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpPassword"
+            android:hint="Password"
+            android:layout_marginTop="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:elevation="0dp"
@@ -90,7 +126,7 @@
         <TextView
             android:fontFamily="sans-serif-condensed"
             android:layout_marginTop="15dp"
-            android:text="Don't have an account? Sign Up"
+            android:text="Already have an account? Log In"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
