@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
+
 class LogInActivity : AppCompatActivity() {
 
     lateinit var signUpText:TextView
